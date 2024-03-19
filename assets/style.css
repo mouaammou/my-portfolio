@@ -72,7 +72,7 @@ header .user img {
     width: 25rem;
     border-radius: 50%;
     margin-bottom: 1rem;
-    border: .7rem solid var(--yellow);
+    border: 2px solid var(--yellow);
 }
 
 header .user .name {
@@ -94,13 +94,66 @@ header .navbar ul{
     padding: 1rem 3rem;
 }
 
-header .navbar ul li a{
+header .navbar ul li a {
     color: #fff;
     font-size: 2rem;
     background-color: #333;
     display: block;
     margin: 10px 0;
     padding: 7px 10px;
-    border-radius: 10px;
+    border-radius: 5rem;
     cursor: pointer;
+}
+
+
+header .navbar ul li a:hover {
+    background-color: var(--yellow);
+    color: #000
+}
+
+main #menu {
+    position: fixed;
+    top: 2rem; right: 2rem; 
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+
+
+/* media queries */
+@media (max-width: 1200px){
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px){
+    header {
+        left: -100%;  
+    }
+    
+    main #menu {
+        display: block;
+    }
+
+    header.display-menu {
+        left: 0;
+    }
+
+}
+
+@media (max-width: 766px){
+    html {
+       font-size: 45%;
+    }
+}
+    
+@media (max-width: 500px){
+    header {
+       width: 100vw;
+    }
 }
