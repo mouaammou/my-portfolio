@@ -49,8 +49,14 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 body {
-    /* background-color: #111; */
+    background-color: #111;
     overflow-x: hidden;
+    padding-left: 35rem;
+}
+
+section {
+    min-height: 100vh;
+    padding: 1rem;
 }
 
 header {
@@ -111,6 +117,10 @@ header .navbar ul li a:hover {
     color: #000
 }
 
+main {
+    color: #fff;
+}
+
 main #menu {
     position: fixed;
     top: 2rem; right: 2rem; 
@@ -156,4 +166,46 @@ main #menu {
     header {
        width: 100vw;
     }
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 15rem;
+}
+
+.home h3 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.home h1 {
+    font-size: 5rem;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.home p {
+    font-size: 2rem;
+    color: #eee;
+    padding: 2.5rem 0;
+}
+
+.home .btn {
+    padding: 1rem 2em;
+    font-size: 2.3rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    background-color: #444;
+    color: #fff;
+}
+
+.home .btn:hover {
+    background-color: var(--yellow);
+    color: #000;
+}
+
+.home .btn i {
+    padding-left: 2rem;
 }
