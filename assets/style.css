@@ -111,7 +111,6 @@ header .navbar ul li a {
     cursor: pointer;
 }
 
-
 header .navbar ul li a:hover {
     background-color: var(--yellow);
     color: #000
@@ -133,8 +132,62 @@ main #menu {
     display: none;
 }
 
+.home {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 15rem;
+}
 
-/* media queries */
+.home h3 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.home h1 {
+    font-size: 5rem;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.home h1 span {
+    color: var(--yellow);
+}
+.home p {
+    font-size: 2rem;
+    color: #eee;
+    padding: 2.5rem 0;
+}
+
+.btn {
+    padding: 1rem 2em;
+    font-size: 2.3rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    background-color: #444;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: var(--yellow);
+    color: #000;
+}
+
+.home .btn i {
+    padding-left: 2rem;
+}
+
+/* ------------ about me section */
+
+.heading {
+    font-size: 5rem;
+    margin: 0 6rem;
+    margin-top: 10rem;
+    text-align: center;
+    width: 100%;
+}
+
+/* start media queries */
 @media (max-width: 1200px){
     html {
         font-size: 55%;
@@ -154,6 +207,14 @@ main #menu {
         left: 0;
     }
 
+    body {
+        padding: 0;
+    }
+
+    .home {
+        padding: 0 5rem;
+    }
+
 }
 
 @media (max-width: 766px){
@@ -166,46 +227,9 @@ main #menu {
     header {
        width: 100vw;
     }
+    .home {
+        text-align: center;
+    }
 }
 
-.home {
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    padding: 0 15rem;
-}
-
-.home h3 {
-    font-size: 2.5rem;
-    color: #fff;
-}
-
-.home h1 {
-    font-size: 5rem;
-    color: #fff;
-    padding: 1rem 0;
-}
-
-.home p {
-    font-size: 2rem;
-    color: #eee;
-    padding: 2.5rem 0;
-}
-
-.home .btn {
-    padding: 1rem 2em;
-    font-size: 2.3rem;
-    border-radius: 5rem;
-    cursor: pointer;
-    background-color: #444;
-    color: #fff;
-}
-
-.home .btn:hover {
-    background-color: var(--yellow);
-    color: #000;
-}
-
-.home .btn i {
-    padding-left: 2rem;
-}
+/* end media queries */
