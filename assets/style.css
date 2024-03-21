@@ -173,18 +173,39 @@ main #menu {
     color: #000;
 }
 
-.home .btn i {
+.btn i {
     padding-left: 2rem;
 }
 
 /* ------------ about me section */
 
+#about {
+    margin-top: 5rem;
+}
+
+#about .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
+}
+
+#about .row .info {
+    flex: 1 1 48rem;
+    padding: 2rem 1rem;
+    padding-left: 6rem;
+}
+
 .heading {
     font-size: 5rem;
     margin: 0 6rem;
-    margin-top: 10rem;
     text-align: center;
-    width: 100%;
+    border-bottom: 1px solid #333;
+}
+
+.heading span {
+    color: var(--yellow);
 }
 
 /* start media queries */
