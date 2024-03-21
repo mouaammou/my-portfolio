@@ -256,6 +256,51 @@ main #menu {
     color: var(--yellow);
 }
 
+#education .box-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 4rem;
+}
+
+#education .box-container .box {
+    width: 54rem;
+    padding: 1rem 2rem;
+    margin: 1rem 2rem;
+    margin-top: 3rem;
+    border-left: 1px solid #ccc;
+    font-size: 2rem;
+}
+
+#education .box-container .box span {
+    font-size: 1.5rem;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5rem;
+    padding: .5rem 2.5rem;
+}
+
+#education .box-container .box h3 {
+    padding-top: 1.5rem;
+}
+
+#education .box-container .box p {
+    font-size: 1.4rem;
+    color: #eee;
+    padding-top: 1rem 0;
+}
+#education .box-container .box i {
+    position: absolute;
+    top: -1.5rem;
+    left: 1.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    font-size: 5rem;
+}
 /* start media queries */
 @media (max-width: 1200px){
     html {
