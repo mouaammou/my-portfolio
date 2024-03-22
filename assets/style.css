@@ -261,13 +261,9 @@ main #menu {
     justify-content: center;
     align-items: center;
 }
-#education > div {
-    margin: 0 10rem;
-    width: 100%;
-}
 #education .box-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     padding: 1rem 0;
@@ -323,13 +319,12 @@ main #menu {
     margin: 17rem 0;
 }
 #portfolio > div {
-    margin: 0 10rem;
     width: 100%;
 }
 
 #portfolio .box-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -351,12 +346,85 @@ main #menu {
 
 #portfolio .box-container .box:hover img {
     transform: scale(1.2);
-    opacity: 50%;
 }
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#contact .row .content {
+    width: 45rem;
+    padding-left: 5rem;
+}
+
+#contact .row .content .title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--yellow);
+    width: 50%;
+    margin-top: 8rem;
+}
+
+#contact .row .content .info {
+    color: #ddd;
+}
+
+#contact .row .content h3{
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 1rem 0;
+}
+
+#contact .row .content i {
+    color: var(--yellow);
+    border: 1px solid var(--yellow);
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    padding-left: 1.4rem;
+}
+
+#contact .row form {
+    margin-top: 5rem;
+    width: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#contact .row form .box {
+    background-color: #333;
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 10px;
+    padding: 5px 2rem;
+    color: #fff;
+    font-size: 2rem;
+}
+
+#contact .row form .box::placeholder {
+    text-transform: lowercase;
+}
+
+#contact .row form textarea {
+    margin-bottom: 15px;
+}
+
 /* start media queries */
 @media (max-width: 1759px){
     #education .box-container .box {
-        width: 40rem;
+        width: 32rem;
     }
 
     #portfolio .box-container .box {
@@ -411,6 +479,7 @@ main #menu {
     #portfolio .box-container .box {
         width: 100%;
         height: 45rem;
+        padding: 0 2rem;
     }
 }
     
@@ -418,13 +487,14 @@ main #menu {
     header {
        width: 100vw;
     }
-
-
     .home {
         text-align: center;
     }
     #about .info {
         text-align: center;
+    }
+    #contact .row form {
+        width: 100%;
     }
 }
 
