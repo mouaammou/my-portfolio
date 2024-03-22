@@ -15,3 +15,21 @@ window.addEventListener('resize', function(){
     menu.classList.remove('fa-times');
     header.classList.remove('display-menu');
 });
+
+
+//add smoth scroll to all links that start with #
+const links = document.querySelectorAll('.navbar a[href^="#"]');
+
+links.forEach(link => {
+    link.addEventListener('click', function(e){
+        //prevent the default action: means the page will not jump to the section   
+        e.preventDefault();
+        //get the id of the section, getAttribute('href') returns the value of the href attribute
+        const id = this.getAttribute('href');
+        
+        //scrollIntoView() is a method that scrolls the element into the visible area of the browser window
+        document.querySelector(id).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
