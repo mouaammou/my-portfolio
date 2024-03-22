@@ -192,7 +192,7 @@ main #menu {
 
 #about .row {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 1rem;
@@ -221,9 +221,9 @@ main #menu {
 #about .row .counter {
     flex: 1 1 48rem;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
 }
 
 #about .row .counter .box {
@@ -233,6 +233,8 @@ main #menu {
     padding: 3rem 2rem;
     border-radius: 4px;
     text-align: center;
+    width: 29rem;
+    height: 13rem;
 }
 
 #about .row .counter .box span {
